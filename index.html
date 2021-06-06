@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grandma Recipes</title>
+        <link rel="icon" href="sst.png" type=image/png>
+        <link rel="stylesheet" href="style.css" type=text/css>
+    </head>
+    <body>
+        <button class="button" onclick="myFunction()">Toggle dark light mode</button>
+        <h1>Grandma Recipes</h1>
+        <p>
+            There are many recipes of grandmother which are still very effective in enhancing our immunity. For example- <b>Turmeric Milk, Orange Juice with Peeper, Tulsi-Peepercorn, Immunity Balls, Ginger and Tulsi Juice, Kadha, Amla Juice, Neem Juice, Immunity Boosting Tomato Soup.</b><br><br>
+            We all know that the combination of milk and turmeric is always good for boosting the immune system. During this viral season, make sure that you add have half a teaspoon of turmeric in one cup of boiled milk. Mix well and drink hot. It is suggested to consume milk at night 20-30 minutes before going to bed.<br><br>
+            Drink a glass of fresh orange juice daily to which a pinch of pepper has been added. It is loaded with antioxidants and is a rich source of Vitamin C. It will naturally help in boosting your immunity.<br><br>
+            Begin your day with home grown tulsi leaves along with organic honey and freshly crushed peppercorn. Take 5-7 leaves, add two crushed peppercorns with one teaspoon honey and consume immediately on an empty stomach and do not drink water after this.<br><br>
+            Take one teaspoon powdered turmeric, 1 tsp jaggery, 1 tsp cow ghee and 1 tsp dry ginger powder. Mix well and make into small round balls. Have 2-3 daily.<br><br>
+            To make Ginger Tulsi Juice All you need to do is, take juice of fresh ginger, crush some tulsi leaves in it. Add a teaspoon of honey to it. Consume it daily to get relief from cough and increase the body immunity.<br><br>
+            Make a warm tea with few tulsi leaves, a piece of ginger and a dash of black pepper. All these ingredients play an important role in fighting illness-causing bacteria and increase the body's immunity.<br><br>
+            Amla juice is a powerhouse of nutrition and is matchless in its power to boost the body's immunity. Have half a teaspoon of crushed fresh amla with 1 crushed garlic clove on an empty stomach.<br><br>
+        </p>
+        <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#9757;</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="container">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 9</div>
+      <img src="turmericmilk.png" style="width:50%">
+      <div class="text">Turmeric Milk</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 9</div>
+      <img src="orangejuice.png" style="width:50%">
+      <div class="text">Orange Juice with Pepper</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 9</div>
+      <img src="tulsipeppercorn.png" style="width:50%">
+      <div class="text">Tulsi-Peppercorn</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 9</div>
+      <img src="immunityballs.png" style="width:50%">
+      <div class="text">Immunity Balls</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 9</div>
+      <img src="gingertulsi.png" style="width:50%">
+      <div class="text">Ginger and Tulsi Juice</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 9</div>
+      <img src="gintulpepper.png" style="width:50%">
+      <div class="text">Kadha</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 9</div>
+      <img src="amlajuice.png" style="width:50%">
+      <div class="text">Amla Juice</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 9</div>
+      <img src="neemjiuce.png" style="width:50%">
+      <div class="text">Neem Juice</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 9</div>
+      <img src="tomatosoup.png" style="width:50%">
+      <div class="text">Immunity Boosting Tomato Soup</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>  
+    </body>
+</html>
